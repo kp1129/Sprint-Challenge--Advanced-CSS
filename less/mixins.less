@@ -1,1 +1,11 @@
 // Mixins Here
+
+.flexbox(@justify, @align-i){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align-i;
+}
+
+.addPadding(@padding-top-bottom: 5px, @padding-right-left: 0) {
+    padding: @padding-top-bottom @padding-right-left;
+}

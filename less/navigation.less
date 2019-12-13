@@ -1,1 +1,26 @@
 // Navigation code here
+
+.navigation {
+    .flexbox(space-between, center);
+    flex-direction: column;
+    background-color: #f6f6f6;
+    
+
+    h1 {
+        .addPadding();
+        font-size: 3rem;
+    }
+
+    nav {
+        .flexbox(space-between, center);
+        max-width: 400px;
+
+        a {
+            .addPadding(10px, 10px);
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
