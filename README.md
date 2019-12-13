@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites have a fixed layout (hardcoded in pixels) but they also include media queries for different devices and screen sizes. A fully responsive website is similar to adaptive, but it uses scalable size units, which means it looks great on all devices and screen sizes, not just the ones specified by the media queries.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A mobile-first approach designs the app for the mobile screen and then scales it up for larger screens (tablet and desktop). Mobile-first design uses min-width media queries (to scale up the UI). A desktop-first approach designs for the desktop user first, and then makes adjustments for smaller screens with max-width media queries. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Setting the font-size to 62.5% in the html tag makes it really easy to set proper font sizes (in rem) throughout the rest of the site, because 62.5% font size translates to 10 pixels. This way, you don't have to do any math conversions between pixels and percentages and especially ems. 18 pixels becomes 1.8 rem, 25 pixels becomes 2.5 rem, and the layout remains beautiful and consistent (with significantly less effort and math).
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is like CSS on JavaScript steroids. Preprocessors make it easy to edit CSS for large webapps and websites, by allowing the developer to write variables, mixins, escapes, and utilize nesting in a way that makes the code much more readable. Then the preprocessor compiles this code into plain CSS that the browser can read. Any developer who has had the same color incorporated in many places, only to pick a different color and have to hunt down each instance where it needs to be changed will understand why CSS preprocessors are so awesome.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is variables, because I love playing around with the code and changing how things look, and preprocessors make it easy because I only have to change it in one place. The concept that is giving me the most trouble is mixins, because even though they're simple enough to grasp as a concept I'm not sure if the use cases I have for them are what other developers would use them for. I'm sure that as I get more experience using preprocessors on different teams, I'll learn more about when they're best to use.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -78,7 +88,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [ x ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -94,11 +104,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [ x ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [ x ] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [ x ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
 * [ ] Navigation Styles: Use the `navigation.less` file for styling.
 
