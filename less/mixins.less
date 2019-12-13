@@ -1,11 +1,23 @@
 // Mixins Here
 
-.flexbox(@justify, @align-i){
-    display: flex;
-    justify-content: @justify;
-    align-items: @align-i;
+.flexbox(@justify, @align-i) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align-i;
 }
 
 .addPadding(@padding-top-bottom: 5px, @padding-right-left: 0) {
-    padding: @padding-top-bottom @padding-right-left;
+  padding: @padding-top-bottom @padding-right-left;
 }
+
+.signUpBtn(@bkg-color, @font-color) {
+  background-color: @bkg-color;
+  color: @font-color;
+  text-align: center;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: @font-color;
+    color: @bkg-color;
+  } // &:hover
+} // .signUpBtn
