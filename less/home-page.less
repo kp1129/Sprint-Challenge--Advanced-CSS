@@ -1,23 +1,35 @@
 // Home Content
 
 .home {
-
   .intro {
+    img {
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      .blast {
+        width: 100%;
+      }
+
+      .sky,
+      .launch {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +58,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 15px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        margin-top: 10px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +81,34 @@
       }
 
       .btn {
-      }
-    }
+        .signUpBtn(@btn-bg-color, white);
+        .addPadding();
+        border-radius: 3px;
+        width: 30%;
+        font-size: 1.5rem;
+
+        @media @phone {
+          width: 100%;
+          .addPadding(20px, 0);
+        } // @media
+      } // .btn
+    } // .walk-text
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 100%;
+        order: -2;
+        margin: 0 auto;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
-    }
-  }
-}// home
+      } // img
+    } // .walk-img
+  } // .walk
+} // home
